@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+  transition: all 200ms ease-in-out;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 4.3% 10.7%, rgb(138, 118, 249) 13.6%, rgb(75, 252, 235) 100.7%);
+}
+
+.main-wrapper {
+  width: 50vw;
+  height: 70vh;
+  background-color: rgba(0,0,0,.3);
+  border: 1px solid black;
+  border-radius: 8%;
+  display: grid;
+  grid-template-rows: 15% 1fr;
+  grid-template-columns: 3fr 1fr;
+  padding: 25px 50px;
+  gap: 10px;
+}
+
+.task-input {
+  grid-column: 1;
+  padding-left: 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.add-task-btn {
+  padding-left: 10px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+.add-task-btn:hover,
+.add-task-btn:focus,
+.add-task-btn:active {
+  background-color: rgba(255,255,255,0.6);
+}
+
+.list {
+  grid-column: span 2;
+  background-color: rgba(255, 255, 255 ,.7);
+  border-radius: 15px;
+  display: inherit;
+  grid-row: 10px 10px;
+  padding: 2% 5%;
+  gap: 1%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 20px;
+}
